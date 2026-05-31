@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div></div>
+
+      <h1>Rock Paper Scissors Game</h1>
+
+      <button class="reset-btn">
+        <img src="images/reset.png" alt="Reset" />
+      </button>
+    </nav>
+
+    <!-- rock paper scissors Choices  -->
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img class="hand" src="images/rock.png" alt="rock" />
+      </div>
+      <div class="choice" id="paper">
+        <img class="hand" src="images/paper.png" alt="paper" />
+      </div>
+      <div class="choice" id="scissors">
+        <img class="hand" src="images/scissors.png" alt="scissors" />
+      </div>
+    </div>
+    <!-- score-board  -->
+    <div class="sBoard">
+      <div class="new">
+        <!-- player score  -->
+        <div class="score score-box">
+          <p id="you">0</p>
+          <p>Your<br />Score</p>
+        </div>
+        <!-- computer score  -->
+        <div class="score score-box">
+          <p id="pc">0</p>
+          <p>Computer<br />Score</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- game status  -->
+    <div class="game-status">
+      <p class="status">Play Your Turn</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

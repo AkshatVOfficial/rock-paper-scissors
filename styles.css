@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #EBEBEB;
+    text-align: center;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #030027;
+    padding: 1.5rem 2rem;
+  }
+  
+  .navbar h1 {
+    position:absolute;
+    left:50%;
+    
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #EBEBEB;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .reset-btn {
+    justify-self: end;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  .reset-btn img {
+    height: 50px;
+    width: 40px;
+    border-radius: 0;
+    background-color: transparent;
+
+  }
+
+img{
+    object-fit: cover;
+}
+
+.reset{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border: none;
+    background-color: #030027;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    transition: transform 0.2s ease; 
+}
+
+.choice:hover{
+    background-color: #030027;
+}
+
+.hand{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.2s ease; 
+    cursor: pointer;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hand:hover{
+    opacity: 90%;
+    box-shadow: 10px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sBoard{
+    margin: 11rem auto 0;
+    gap: 5rem;
+}
+.new{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.score-box{
+    width: 8rem;
+    font-size: 1.5rem;
+}
+
+#you, #pc{
+    font-size: 2rem;
+} 
+
+.game-status{
+    margin: 2rem;
+}
+
+.status{
+    background-color: #030027;
+    color: #EBEBEB;
+    font-size: 1.2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet */
+@media (max-width: 768px){
+
+    .navbar h1{
+        font-size: 1.5rem;
+    }
+
+    .choices{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .choice{
+        width: 130px;
+        height: 130px;
+    }
+
+    .hand{
+        width: 120px;
+        height: 120px;
+    }
+
+    .sBoard{
+        margin-top: 8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .navbar h1{
+        font-size: 1.5rem;
+    }
+
+    .choices{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .choice{
+        width: 130px;
+        height: 130px;
+    }
+
+    .hand{
+        width: 120px;
+        height: 120px;
+    }
+
+    .sBoard{
+        margin-top: 12rem;
+    }
+}
+
+/* very small phones */
+@media (max-width: 400px){
+
+    .navbar h1{
+        
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .choice{
+        width: 90px;
+        height: 90px;
+    }
+
+    .hand{
+        width: 80px;
+        height: 80px;
+    }
+
+    #you, #pc{
+        font-size: 1.7rem;
+    }
+
+    .score-box{
+        font-size: 1.2rem;
+        width: 8rem;
+    }
+
+    .status{
+        font-size: rem;
+        padding: 0.7rem;
+    }
+
+    .sBoard{
+        margin-top: 15rem;
+    }
+}
+
+
