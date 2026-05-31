@@ -3,6 +3,7 @@
     padding: 0%;
     background-color: #EBEBEB;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar {
@@ -122,6 +123,12 @@ img{
     border-radius: 10px;
     font-weight: bolder;
     box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (hover: hover){
+    .choice:hover{
+        background-color: #030027;
+    }
 }
 
 /* Tablet */
